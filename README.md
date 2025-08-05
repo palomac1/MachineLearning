@@ -47,6 +47,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn
 python AD.py
 
 📊 O que Esperar da Execução
+
 Ao executar o script, ele irá:
 
 Processar o arquivo diabetes.csv 🔄
@@ -60,11 +61,13 @@ Mostrar uma tabela comparativa final com os resultados dos testes
 Salvar um gráfico de barras no arquivo: comparacao_modelos.png 🖼️
 
 📌 Observações
+
 O projeto não depende de bibliotecas externas de Machine Learning para a construção da árvore de decisão – o algoritmo é implementado manualmente.
 
 O dataset é amplamente utilizado em estudos de ML para classificação binária (diabetes: positivo/negativo).
 
 📚 Dataset
+
 Pima Indians Diabetes Database - Kaggle
 
 
