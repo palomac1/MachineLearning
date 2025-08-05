@@ -24,11 +24,9 @@ Para que o script funcione corretamente, a estrutura da pasta deve ser:
 Como Python é uma linguagem interpretada, não há um passo de compilação.  
 A seguir, o passo a passo para preparar o ambiente:
 
-### 1️⃣ Navegar até a pasta do projeto
+1️⃣ Navegar até a pasta do projeto
 
 cd caminho/para/a/pasta/do/projeto
-# Exemplo no Windows:
-cd C:\Users\palom\MachineLearning\ArvoreDecisao
 
 2️⃣ Criar um ambiente virtual 
 
