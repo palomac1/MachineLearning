@@ -10,7 +10,9 @@ O gerenciador de pacotes pip (geralmente instalado junto com o Python).
 Para que o script funcione corretamente, o arquivo do dataset original deve estar na mesma pasta que o script Python. A estrutura deve ser a seguinte:
 
 /SeuProjeto/
+
 |-- AD.py             (ou o nome do script Python)
+
 |-- diabetes.csv      (dataset original)
 
 🚀 Instruções de Instalação e Execução
