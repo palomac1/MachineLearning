@@ -14,7 +14,9 @@ Para que o script funcione corretamente, a estrutura da pasta deve ser:
 
 /SeuProjeto/
 │
+
 ├── AD.py # Script principal (algoritmo de decisão)
+
 └── diabetes.csv # Dataset original
 
 ## 🚀 Instruções de Instalação e Execução
