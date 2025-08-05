@@ -31,7 +31,7 @@ python -m venv venv
 
 3️⃣ Passo 3: Ativar o Ambiente Virtual
 
-# No Windows (PowerShell)
+No Windows (PowerShell)
 .\venv\Scripts\Activate
 
 4️⃣ Passo 4: Instalar as Dependências
