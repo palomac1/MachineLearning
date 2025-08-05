@@ -33,7 +33,9 @@ cd caminho/para/a/pasta/do/projeto
 python -m venv venv
 
 3️⃣ Ativar o ambiente virtual
+
 Windows (PowerShell): .\venv\Scripts\Activate
+
 Linux/macOS: source venv/bin/activate
 
 4️⃣ Instalar as dependências
