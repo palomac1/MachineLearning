@@ -55,13 +55,13 @@ def criar_dataset_processado():
 # SECAO 2: IMPLEMENTACAO DA ARVORE DE DECISAO PARA CLASSIFICACAO
 # -------------------------------------------------------------------
 
-def calcular_entropia(y): 
+def calcular_entropia(y):  #Função que calcula a entropia de um conjunto de rótulos
     contagem_classes = np.bincount(y) # Conta a ocorrência de cada classe para calcular a entropia ()
     probabilidades = contagem_classes / len(y) # Calcula a probabilidade de cada classe
     probabilidades = probabilidades[probabilidades > 0] # Remove probabilidades zero para evitar log(0)
     return -np.sum(probabilidades * np.log2(probabilidades)) 
 
-def calcular_ganho_de_informacao(y_pai, y_esquerda, y_direita):
+def calcular_ganho_de_informacao(y_pai, y_esquerda, y_direita): #Função que calcula o ganho de informação entre o nó pai e os nós filhos
     peso_esquerda = len(y_esquerda) / len(y_pai) # Calcula o peso da divisão esquerda para o ganho de informação para ponderar a entropia
     peso_direita = len(y_direita) / len(y_pai) # Calcula o peso da divisão direita
     entropia_pai = calcular_entropia(y_pai) # Entropia do nó pai para calcular o ganho de informação
@@ -74,7 +74,7 @@ def calcular_gini(y):
     probabilidades = contagem_classes / len(y) # Calcula a probabilidade de cada classe
     return 1 - np.sum(probabilidades**2) # Calcula o índice de Gini como 1 menos a soma dos quadrados das probabilidades para evitar distorções
 
-def calcular_ganho_gini(y_pai, y_esquerda, y_direita):
+def calcular_ganho_gini(y_pai, y_esquerda, y_direita): #Função que calcula o ganho de Gini entre o nó pai e os nós filhos
     peso_esquerda = len(y_esquerda) / len(y_pai) # Calcula o peso da divisão esquerda para o ganho de Gini
     peso_direita = len(y_direita) / len(y_pai) # Calcula o peso da divisão direita para o ganho de Gini 
     gini_pai = calcular_gini(y_pai) # Índice de Gini do nó pai para calcular o ganho de Gini
@@ -196,9 +196,7 @@ class ArvoreDeDecisao:
 # -------------------------------------------------------------------
 
 def principal():
-    """
-    Funcao principal que orquestra todo o processo.
-    """
+    
     # Cria o dataset processado e carrega os dados 
     caminho_arquivo_processado = criar_dataset_processado() 
     if caminho_arquivo_processado is None:
