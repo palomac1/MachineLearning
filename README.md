@@ -1,5 +1,5 @@
-🌳 Projeto de Árvore de Decisão - Classificação de Diabetes
-Este projeto consiste na implementação de um algoritmo de Árvore de Decisão do zero em Python para resolver um problema de classificação. O objetivo é prever o diagnóstico de diabetes 🩸 com base no dataset "Pima Indians Diabetes Database".
+🌳 # Projeto de Árvore de Decisão - Classificação de Diabetes
+Este projeto consiste na implementação de um algoritmo de Árvore de Decisão do zero em Python para resolver um problema de classificação. O objetivo é prever o diagnóstico de diabetes com base no dataset "Pima Indians Diabetes Database".
 
 🛠️ Pré-requisitos
 Python 3.8 ou superior instalado.
